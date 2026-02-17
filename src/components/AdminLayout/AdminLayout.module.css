@@ -1,0 +1,24 @@
+/* AdminLayout.css */
+
+.admin-theme {
+  --admin-primary: #333CF5;
+  --admin-bg: #F0F2F5; /* لون خلفية مختلف عن الـ Home */
+  --sidebar-color: #ffffff;
+  --card-bg: #ffffff;
+}
+
+/* تخصيص الخلفيات */
+.admin-theme .main-content-bg {
+  background-color: var(--admin-bg);
+}
+
+.admin-theme .sidebar-bg {
+  background-color: var(--sidebar-color);
+}
+
+/* يمكنكِ تغيير ألوان الكومبوننتس الداخلية من هنا برضه */
+.admin-theme .stat-card {
+  background-color: var(--card-bg);
+  border-radius: 20px;
+  transition: transform 0.3s ease;
+}

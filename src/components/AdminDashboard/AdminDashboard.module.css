@@ -1,0 +1,163 @@
+/* AdminDashboard.module.css */
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  background-color: #F6F7F8;
+  padding-bottom: 40px;
+}
+
+/* الكارت الأزرق الكبير المطور */
+.welcomeCard {
+  background: linear-gradient(108deg, #333CF5 0%, #a333f5 100%);
+  border-radius: 28px;
+  padding: 60px 50px 120px 50px; /* زيادة التباعد السفلي ليتداخل مع الكروت */
+  color: white;
+  position: relative;
+  height: 440px;
+  box-shadow: 0 20px 40px rgba(51, 60, 245, 0.2);
+}
+
+.welcomeCard h1 {
+  font-size: 34px;
+  font-weight: 800;
+  margin-bottom: 12px;
+}
+
+.welcomeCard p {
+  opacity: 0.85;
+  font-size: 16px;
+  margin-bottom: 35px;
+}
+
+.actions {
+  display: flex;
+  gap: 15px;
+}
+
+/* شبكة الإحصائيات - مرفوعة لتتداخل مع الكارت الأزرق */
+.statsGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  margin-top: -240px; /* الرفع المطلوب للتداخل */
+  padding: 0 50px;
+  z-index: 10;
+}
+
+.statCard {
+  background: white;
+  padding: 28px;
+  border-radius: 24px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.04);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  transition: transform 0.3s ease;
+}
+
+.statCard:hover {
+  transform: translateY(-5px);
+}
+
+.iconWrapper {
+  width: 52px;
+  height: 52px;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 26px;
+}
+
+.statValue {
+  font-size: 32px;
+  font-weight: 900;
+  color: #010218;
+  line-height: 1;
+}
+
+.statLabel {
+  font-size: 14px;
+  font-weight: 800;
+  color: #010218;
+}
+
+.statSub {
+  font-size: 11px;
+  color: #757575;
+  font-weight: 600;
+}
+
+/* المحتوى السفلي */
+.mainContent {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  padding: 0 50px;
+  margin-top: 100px;
+}
+
+.sectionCard {
+  background: white;
+  border-radius: 28px;
+  padding: 30px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.03);
+  min-height: 400px;
+}
+
+.headerRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.headerRow h2 {
+  font-size: 20px;
+  font-weight: 800;
+  color: #010218;
+}
+
+.viewAll {
+  color: #333CF5;
+  font-size: 13px;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.listItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px;
+  background: #F9FAFB;
+  border-radius: 20px;
+  margin-bottom: 12px;
+  transition: all 0.2s;
+}
+
+.listItem:hover {
+  background: #F1F2FF;
+}
+
+.emptyState {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 250px;
+  text-align: center;
+}
+
+.emptyIcon {
+  width: 80px;
+  height: 80px;
+  background: #F6F7F8;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 35px;
+  margin-bottom: 20px;
+}

@@ -1,0 +1,27 @@
+/* السطر ده هو الحل لمشكلة v4 */
+
+@reference "../../index.css"; 
+
+.floatingCard {
+  position: absolute;
+  background-color: white; /* بدلاً من bg-white */
+  padding: 12px 16px;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 20;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  border: 1px solid rgba(0, 0, 0, 0.04);
+  
+  /* لو عاوزة تستخدمي تيلويند جوه الـ CSS استخدمي @apply */
+  @apply shadow-xl; 
+}
+
+.floatingCard:hover {
+  transform: translateY(-8px) scale(1.05);
+  @apply shadow-2xl;
+}
+
+

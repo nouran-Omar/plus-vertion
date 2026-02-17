@@ -1,0 +1,140 @@
+/* AddDoctor.module.css */
+.container {
+  background-color: white;
+  border-radius: 28px;
+  overflow: hidden;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.03);
+}
+
+.header {
+  background-color: #333CF5;
+  padding: 30px 40px;
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.formBody {
+  padding: 40px;
+  display: grid;
+  grid-template-columns: 350px 1fr;
+  gap: 40px;
+}
+
+.uploadSection {
+  background: #F8F9FF;
+  border: 2px dashed #D0D5FF;
+  border-radius: 24px;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.uploadSection:hover {
+  background: #F1F3FF;
+  border-color: #333CF5;
+}
+
+.personalInfo {
+  background: white;
+  border: 1px solid #F1F2F4;
+  border-radius: 24px;
+  padding: 30px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.02);
+}
+
+.gridInputs {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.inputGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.inputGroup label {
+  font-size: 14px;
+  font-weight: 700;
+  color: #010218;
+}
+
+.inputField {
+  padding: 14px 18px;
+  border: 1px solid #E2E8F0;
+  border-radius: 14px;
+  font-size: 14px;
+  outline: none;
+  transition: border 0.3s;
+}
+
+.inputField:focus {
+  border-color: #333CF5;
+}
+
+.errorText {
+  color: #EF4444;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.genderContainer {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.genderOption {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 15px;
+  border: 1px solid #E2E8F0;
+  border-radius: 16px;
+  cursor: pointer;
+  font-weight: 700;
+  transition: all 0.3s;
+}
+
+.genderOption.selected {
+  background-color: #333CF5;
+  color: white;
+  border-color: #333CF5;
+  box-shadow: 0 8px 15px rgba(51, 60, 245, 0.2);
+}
+
+.footerActions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 15px;
+  padding: 40px;
+  background: #F9FAFB;
+}
+
+.btnCancel {
+  padding: 12px 40px;
+  background: #E2E8F0;
+  border-radius: 20px;
+  font-weight: 700;
+}
+
+.btnSubmit {
+  padding: 12px 40px;
+  background: #333CF5;
+  color: white;
+  border-radius: 20px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}

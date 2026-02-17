@@ -1,0 +1,47 @@
+@reference "../../index.css";
+
+.section {
+  @apply py-24 bg-[#F9FAFB];
+}
+
+.featureCard {
+  @apply bg-white rounded-[56px] relative shadow-[0_40px_100px_-20px_rgba(0,0,0,0.06)] border border-gray-50;
+  min-height: 720px;
+}
+
+.iconBox {
+  @apply w-16 h-16 rounded-full border border-gray-100 flex items-center justify-center text-3xl text-[#333CF5] bg-white shadow-sm;
+}
+
+.progressTrack {
+  @apply h-1.5 w-full bg-gray-100 rounded-full overflow-hidden;
+}
+
+.progressBar {
+  @apply h-full bg-[#333CF5] rounded-full;
+}
+
+.decoBadge {
+  @apply absolute top-6 right-6 w-12 h-12 bg-white rounded-full flex items-center justify-center text-[#333CF5] shadow-xl text-2xl z-20 border border-gray-50;
+}
+
+.imageShadow {
+  @apply absolute -inset-6 bg-[#F9FAFB] rounded-[48px] -z-0;
+}
+
+.tabsWrapper {
+  @apply absolute bottom-10 left-1/2 -translate-x-1/2 flex items-center gap-5 px-6 py-4 bg-white/90 backdrop-blur-xl rounded-full border border-white/50 shadow-[0_20px_50px_rgba(0,0,0,0.1)] z-40;
+}
+
+.tabItem {
+  @apply w-14 h-14 rounded-full flex items-center justify-center text-2xl text-gray-400 transition-all duration-300;
+}
+
+.tabItem:hover {
+  @apply bg-gray-50 text-gray-600;
+}
+
+.activeTab {
+  @apply bg-[#333CF5] text-white shadow-lg scale-110 ring-4 ring-white;
+}
+
